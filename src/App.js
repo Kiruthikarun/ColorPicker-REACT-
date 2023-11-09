@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+// app.js
+import { Color } from "./components/Pallete";
 
 function App() {
+  const colorProps = {
+    color1: "red",
+    color2: "blue",
+    color3: "green",
+    color4: "yellow",
+    color5: "purple",
+    color6: "orange",
+    color7: "pink",
+    color8: "brown",
+    color9: "cyan",
+    color10: "magenta",
+    color11: "lime",
+    color12: "teal",
+    color13: "indigo",
+    color14: "violet",
+    color15: "navy",
+    color16: "gold",
+    color17: "maroon",
+    
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Color {...colorProps} />
     </div>
   );
 }
